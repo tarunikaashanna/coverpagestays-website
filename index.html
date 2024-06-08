@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>The CoverPage Stays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="D:/internship/hotel/image/logom.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+          <li> <a href="#rooms" class="nav-link">Rooms</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
+          <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
+          <li> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>The CoverPage Bataghat</h1>
+          <p>Bataghat: Landour's neighbour -  an Unsung Paradise. </p>
+          <br>
+		  <br>
+		  <br>
+		  <br>
+        </div>
+      </div>
+      <div class="image">
+        <img src="D:/internship/hotel/image\home1m.png" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="D:/internship/hotel/image/home1m.png" alt="" class="slide active" onclick="img('D:/internship/hotel/image/home1m.png')">
+        <img src="D:/internship/hotel/image/home2m.png" alt="" class="slide" onclick="img('D:/internship/hotel/image/home2m.png')">
+        <img src="D:/internship/hotel/image/home3m.png" alt="" class="slide" onclick="img('D:/internship/hotel/image/home3m.png')">
+        <img src="D:/internship/hotel/image/home4m.png" alt="" class="slide" onclick="img('D:/internship/hotel/image/home4m.png')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="D:/internship/hotel/image/a1m.png" alt="" class="image1">
+          <img src="D:/internship/hotel/image/a2m.png" alt="" class="image2">
+        </div>
+        </div>
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to The CoverPage Boutique Stays</h2>
+          <p>Nestled at the edge of the majestic Jabarkhet Nature Reserve, Bataghat is a vibrant haven that beckons 
+		  travellers seeking inspiration amidst enchanting landscapes and a stunning view of the Himalayan Bandarpunch range.</p>
+		  
+          <p>The Coverpage Boutique Stays at Bataghat offers a cradle of curiosity and creativity, where every corner is 
+		  imbued with a sense of discovery, both internal and external.Unwind on our boutique property's terrace, porch, or
+		  balconies, where each vantage point offers panoramic views of the surrounding beauty.</p>
+		  
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        <h2>Our Amenities</h2>
+        <p>Experience unparalleled comfort at our hotel, where every detail is designed with your convenience in mind.
+		Whether you're here for business or leisure, our dedicated concierge service is always on hand to ensure your 
+		stay is nothing short of exceptional. </p>
+
+ <div class="content">
+          <div class="box flex">
+            <span>Mountain View</span>
+          </div>
+          <div class="box flex">
+            <span>Valley View</span>
+          </div>
+          <div class="box flex">
+            <span>WiFi</span>
+          </div>
+          <div class="box flex">
+            <span>Dedicated Workspace</span>
+          </div>
+          <div class="box flex">
+            <span>Clothes Drying Rack</span>
+          </div>
+          <div class="box flex">
+            <span>Tv, Books and reading material</span>
+          </div>
+          <div class="box flex">
+            <span>Fireplace guards</span>
+          </div>
+          <div class="box flex">
+            <span>Portable fans and Heating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="rooms">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms $ Suites</h2>
+        </div>
+        
+      </div> 
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r1m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 1</h3>
+           
+          </div>
+        </div>
+		
+        <div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r2m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 2</h3>           
+          </div>
+        </div>
+		
+        <div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r3m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 3</h3>           
+          </div>
+        </div>
+		
+		<div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r4m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 4</h3>           
+          </div>
+        </div>
+		
+		<div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r5m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 5</h3>           
+          </div>
+        </div>
+		
+		<div class="box">
+          <div class="img">
+            <img src="D:/internship/hotel/image/r6m.png" alt="">
+          </div>
+          <div class="text">
+            <h3>Bedroom 6</h3>           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNICATION</h5>
+          <h2>People Say</h2>
+        </div>
+
+        <div class="para">
+          <p>Great place. Well kept. Very clean. All linen, furniture and bathroom were very clean.The apartment was 
+		  well-equipped with all the amenities, ensuring a hassle-free experience. Felt right at home. Definitely value 
+		  for money. </p>
+
+          <div class="box flex">
+            <div class="img">
+              <img src="D:/internship/hotel/image/cm.jpg" alt="">
+            </div>
+             <div class="name">
+              <h5>Anushka</h5>
+              <h5>March 2024</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="D:/internship/hotel/image/rem.png" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+           <h2>About The Homestay</h2>
+          <h4>Our Restaurant<br></h4>
+          <p>Breakfast is available on payment basis at the cafe on the premises.</p>
+            <p>COFFEE | TEA | BAKERY <br>
+			Cuisines available: Continental
+            Medical, and Alcohol Stores are 10 mins by car/bike.<br>
+           </p>
+          <h4>Instant Connection</h4>
+          <p>Travellers from the city instantly connect with this picturesque haven, where calmness and serenity abound 
+		  alongside breathtaking Himalayas and Doon Valley views.</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Guest Profile</h2>
+            <div class="accordionItemContent">
+              <p>Unmarried couples also allowed.<br>
+                 Groups with only male guests are not allowed at this property.</p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">ID Proof Related</h2>
+            <div class="accordionItemContent">
+              <p>Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s).<br>
+                Local ids are allowed.</p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Pet(s) Related</h2>
+            <div class="accordionItemContent">
+              <p>Only Dogs & Cats, as pets, are allowed at the property.<br>
+                Pet food is not available at the property.<br>
+                No. of pets allowed at the property: Two.<br>
+                Pets would not be allowed to roam around without a leash.<br>
+                Pets are allowed.<br>
+                There are no pets living on the property.<br>
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Smoking/Alcohol consumption Rule</h2>
+            <div class="accordionItemContent">
+              <p>Smoking and Alcohol within the premises is allowed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+
+
+
+  <section class="gallary mtop " id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+        <div class="button">
+          
+		  
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="D:/internship/hotel/image/g1m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g2m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g3m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g4m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g5m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g6m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g7m.png" alt="">
+        </div>
+        <div class="item">
+          <img src="D:/internship/hotel/image/g8m.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="map top">
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d36972.24999320321!2d78.11732488230743!3d30.45687748514716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908db00600b49a7%3A0x28a85c257ba2707d!2sThe%20CoverPage%20Stays%20at%20Bataghat!5e0!3m2!1sen!2sin!4v1717762173641!5m2!1sen!2sin"
+	  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid top" id="contact">
+      <div class="box">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+        
+
+        <h2>Accepted payment methods</h2>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+     <div class="box">
+        <h3>House rules</h3>
+        <ul>
+          <li>You'll be staying in someone's home, so please treat it with care and respect.</li>
+          <li>SELF-Check-in: 2:00 pm – 8:00 pm</li>
+          <li>Checkout before 11:00 am</li>
+          <li>Quiet hours
+            10:00 am - 6:00 am</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>Customer Care/Help</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>CONTACT FOR BOOKINGS</h3>
+
+        <ul>
+          <li><i class="far fa-envelope"></i> bookings@thecoverpagestays.com</li>
+          <li><i class="far fa-phone-alt"></i>+91 9873089103 </li>
+          <li><i class="far fa-comments"></i>We love our customers, so feel free to visit during normal business hours.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
